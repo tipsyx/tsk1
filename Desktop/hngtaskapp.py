@@ -12,7 +12,7 @@ def get_info():
     utc_time = datetime.datetime.now(pytz.UTC)
     utc_time_str = utc_time.strftime('%Y-%m-%dT%H:%M:%SZ')
     github_repo_url = "https://github.com/tipsyx/tsk1.git"
-    github_file_url = "https://github.com/tipsyx/tsk1/blob/main/hngtaskapp.py"
+    github_file_url = "https://github.com/tipsyx/tsk1/blob/master/Desktop/hngtaskapp.py"
     
     # Status Code of Success (HTTP 200)
     status_code = 200
