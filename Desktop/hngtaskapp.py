@@ -4,7 +4,7 @@ import pytz
 
 app = Flask(__name__)
 
-@app.route('/info', methods=['GET'])
+@app.route('/api/info', methods=['GET'])
 def get_info():
     slack_name = request.args.get('slack_name', 'Tipsy0')
     track = request.args.get('track', 'backend')
@@ -31,4 +31,4 @@ def get_info():
     return jsonify(response_data)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run()
